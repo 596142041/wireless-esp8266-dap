@@ -15,7 +15,7 @@ static struct {
     const char *ssid;
     const char *password;
 } wifi_list[] __attribute__((unused)) = {
-    {.ssid = "OTA", .password = "12345678"},
+    {.ssid = "AX6_S", .password = "ad201306"},
     {.ssid = "DAP", .password = "12345678"},
     // Add your WAP like this:
     // {.ssid = "your ssid", .password = "your password"},
@@ -53,11 +53,11 @@ static struct {
 //
 
 #if (USE_TCP_NETCONN == 1 && USE_KCP == 1)
-#error Can not use KCP and TCP at the same time!
+#error Can not use KCP 和 TCP at the same time!
 #endif
 
 #if (USE_KCP == 1)
-#warning KCP is a very experimental feature, and it should not be used under any circumstances. Please make sure what you are doing. Related usbip version: https://github.com/windowsair/usbip-win
+#warning KCP is a very experimental feature, 和 it should not be used under any circumstances. Please make sure what you are doing. Related usbip version: https://github.com/windowsair/usbip-win
 #endif
 
 
